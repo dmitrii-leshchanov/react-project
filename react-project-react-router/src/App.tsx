@@ -9,8 +9,6 @@ import { Home } from './components/pages/Home';
 import { Orders } from './components/pages/Orders';
 import { layoutConfig } from './config/layout-config';
 import { productsConfig } from './config/products-config';
-import { NotFound } from './components/pages/NotFound';
-
 
 function App() {
   return <BrowserRouter>
@@ -25,10 +23,7 @@ function App() {
                     <Route path='dairy' element={<DairyProducts/>}/>
                     <Route path='bread' element={<BreadProducts/>}/>
               </Route>
-              <Route path="*" element={<NotFound></NotFound>}></Route>
           </Route>
-
-           
               
       </Routes>
   </BrowserRouter>
